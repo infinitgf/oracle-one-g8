@@ -21,7 +21,7 @@ let valor1 = 18;
 let valor2 = 3;
 let resultado = valor1+valor2;
 
-console.log(`La suma de ${valor1} y ${valor2} es igual a ${resultado}`);
+console.log(`La suma de ${valor1} y ${valor2} es igual a ${resultado}.`);
 
 //6.Crea una variable llamada "valor1" y otra llamada "valor2", asignándoles valores numéricos de tu elección. 
 //  Luego, realiza la resta de estos dos valores y almacena el resultado en una tercera variable llamada "resultado".
@@ -30,11 +30,12 @@ let valor1 = 18;
 let valor2 = 3;
 let resultado = valor1-valor2;
 
-console.log(`La diferencia entre ${valor1} y ${valor2} es igual a ${resultado}`);
+console.log(`La diferencia entre ${valor1} y ${valor2} es igual a ${resultado}.`);
 
 //7.Pide al usuario que ingrese su edad con prompt. Con base en la edad ingresada, 
 // utiliza un if para verificar si la persona es mayor o menor de edad y muestra un mensaje apropiado en la consola.
 let edadUsuario = (prompt('Ingrese su edad:') >= 18) ? 'Es mayor de edad.' : 'Es menor de edad.';
+console.log(edadUsuario);
 
 //8.Crea una variable "numero" y solicita un valor con prompt. Luego, verifica si es positivo, negativo o cero utilizando un if-else y muestra el mensaje correspondiente.
 let numero = prompt('Ingrese un número');
@@ -48,15 +49,29 @@ if(numero == 0){
 }
 
 //9.Utiliza un bucle while para mostrar los números del 1 al 10 en la consola.
+let contador = 1;
+while(contador <= 10){
+    console.log(contador);
+    contador++;
+}
 
-//10.Crea una variable "nota" y asígnale un valor numérico. Utiliza un if-else para determinar si la nota es mayor o igual a 7 y muestra "Aprobado" o "Reprobado" en la consola.
+//10.Crea una variable "nota" y asígnale un valor numérico. 
+// Utiliza un if-else para determinar si la nota es mayor o igual a 7 y muestra "Aprobado" o "Reprobado" en la consola.
+let nota = 5;
+if (nota >= 7){
+    console.log('Aprobado');
+} else {
+    console.log('Reprobado');
+}
 
 //11.Utiliza Math.random para generar cualquier número aleatorio y muestra ese número en la consola.
+console.log(parseInt(Math.random()*100) + 1);
 
 //12.Utiliza Math.random para generar un número entero entre 1 y 10 y muestra ese número en la consola.
+console.log(parseInt(Math.random() * 10) + 1);
 
 //13.Utiliza Math.random para generar un número entero entre 1 y 1000 y muestra ese número en la consola.
-
+console.log(parseInt(Math.random()*1000) + 1);
 
 
 // ------------  SOLUCIONES  -------------
