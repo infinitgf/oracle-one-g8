@@ -15,3 +15,16 @@ function onClickPrompt(){
     //Luego, muestra una alerta con el mensaje concatenando la respuesta con el texto: "Estuve en {ciudad} y me acordé de ti".
     return alert(`Estuve en ${ciudad} y me acordé de ti`);
 }
+
+//Crea una función que muestre una alerta con el mensaje: "Yo amo JS" siempre que se presione el botón "Alerta".
+function onClickAlert(){
+    return alert("Yo amo JS");
+}
+
+//Al hacer clic en el botón "suma", pide 2 números y muestra el resultado de la suma en una alerta.
+function onClickSuma(){
+    let numA = parseInt(prompt('Indique el primer número: '));
+    let numB = parseInt(prompt('Indique el segundo número: '));
+    
+    return alert(`El resultado de la suma de ${numA} mas ${numB} es igual a: ${numA + numB}`);
+}
